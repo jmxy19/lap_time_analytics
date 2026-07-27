@@ -3,12 +3,10 @@ from models.formula_car import FormulaCar
 from models.grand_prix import GrandPrix
 
 class ControlGrandPrix:
-    def __init__(self, circuitName):
-        self.circuitName = circuitName
+    def __init__(self):
         self.circuitsList = ["monza"]
 
-    def run_race(self):
-        print('Choose which circuit you are gonna test: ')
+    def run_race(self):        
         for i in self.circuitsList:
             print(i)
         opt = input("Type the name of the circuit ").strip()
