@@ -5,11 +5,15 @@ class GrandPrix(): #receives a car and a circuit to start the grand prix
         self.sprint = sprint
         
     def freePractice(self): #simulation of free practice
+        while True:
+            try:
+                lapsNumber = int(input("Enter the number of laps that you're gonna test: "))
+                lapsRestore = lapsNumber
+                tyreWear = 0
+                break
+            except:
+                print("Error in the input data")
 
-        lapsNumber = int(input("Enter the number of laps that you're gonna test: "))
-        lapsRestore = lapsNumber
-        tyreWear = 0
-        
         if self.sprint == False: # if there isn't sprint race
             sesion = 1
             print(f'\n------------Starting with free practice simulation, sesion {sesion} ------------\n')
