@@ -1,7 +1,6 @@
-from models.circuit import Circuit
 from models.formula_car import FormulaCar
-from models.grand_prix import GrandPrix
 from views.main_window import MainWindow
+from models.monza import Monza
 
 class ControlGrandPrix:
     def __init__(self, main_window):
@@ -11,9 +10,6 @@ class ControlGrandPrix:
         opt = self.main_window.get_circuit_choice()
         
         if opt.lower() == "monza":
-            monza = Circuit(5793,11,4)
-            monza.cornersInfo()
-            monza.straigthsInfo()
-            redBull = FormulaCar(20,20,"Hard")
-            monzaGP = GrandPrix(redBull,monza,False)
-            monzaGP.freePractice()   
+            monza = Monza()
+            redBull = self.main_window.get_formula_car_info()
+            self.main_window.freePractice() 
