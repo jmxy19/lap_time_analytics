@@ -1,4 +1,4 @@
-class Circuit(): #keeps importaant circuit's info
+class Circuit: #keeps importaant circuit's info
     def __init__(self, distance, numCorners, numStraights):
         self.distance = distance
         self.numCorners = numCorners

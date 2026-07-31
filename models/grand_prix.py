@@ -1,4 +1,4 @@
-class GrandPrix(): #receives a car and a circuit to start the grand prix 
+class GrandPrix: #receives a car and a circuit to start the grand prix 
     def __init__(self, formulaCar, circuit, sprint):
         self.formulaCar = formulaCar
         self.circuit = circuit
