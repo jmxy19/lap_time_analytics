@@ -4,3 +4,5 @@ from views.main_window import MainWindow
 main = MainWindow()
 start = ControlGrandPrix(main)
 start.run_race()
+
+main.run() 

@@ -47,13 +47,13 @@ class Monza:
         self.t1_banking = 0 #degree
         self.t1_heavy_breaking = 4 #from 0 to 4 (0 no heavy, 1 light, 2 medium, 3 hard, 4 extreme)
         #corner 2
-        self.t1_length = 85 #metters
-        self.t1_direction = "left"
-        self.t1_radius = 30 #metters
-        self.t1_min_speed = 75
-        self.t1_max_exit_speed = 120
-        self.t1_banking = 0 #degree
-        self.t1_heavy_breaking = 0
+        self.t2_length = 85 #metters
+        self.t2_direction = "left"
+        self.t2_radius = 30 #metters
+        self.t2_min_speed = 75
+        self.t2_max_exit_speed = 120
+        self.t2_banking = 0 #degree
+        self.t2_heavy_breaking = 0
         #corner 3
         self.t1_length = 520 #metters
         self.t1_direction = "right"
